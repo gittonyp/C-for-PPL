@@ -2,11 +2,11 @@
 
 int num(int n){
 if(n==0){
-    return 0;
+    return 1;
 }
+int z=(n%10);
 
-
-return 10*(n%10)+num(n/10);
+return num(n/10)*z;
 
 }
 int main(){
