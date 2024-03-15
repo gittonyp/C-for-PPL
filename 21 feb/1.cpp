@@ -4,7 +4,7 @@ void facti(){
 int a;
 scanf("%d",&a);
 int z=1;
-for (int i = 1; i <= a; i++)
+for (int i = 1; i < a; i++)
 {
     z=i*z;
 }

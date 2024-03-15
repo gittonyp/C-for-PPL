@@ -1,8 +1,7 @@
 #include<stdio.h>
 
-void facti(){
-int a;
-scanf("%d",&a);
+void facti(int a){
+
 int z=1;
 for (int i = 1; i <= a; i++)
 {
@@ -13,6 +12,8 @@ printf("\n");
 return;
 }
 int main(){
-    facti();
+    int a;
+scanf("%d",&a);
+    facti(a);
 }
 
