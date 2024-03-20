@@ -1,18 +1,27 @@
-#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
 
-int num(int n){
+int rev(int n,int *m){
 if(n==0){
-    return 1;
+    return 0;
 }
-int z=(n%10);
 
-return num(n/10)*z;
+int k=rev(n/10,m);
+
+*m=(*m)*10;
+
+return (n%10)**m+k; 
+
+
 
 }
+
+
 int main(){
-    int n;
-    scanf("%d",&n);
-    printf("%d",num(n));
+    int a;
+    cin>>a;
+    int z=1;
+    int *p=&z;
+    cout<<rev(a,p)/10;
 
 }
-
