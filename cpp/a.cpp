@@ -1,28 +1,45 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
+    int t;
+    cin>>t;
+    while(t>0){
     int n;
     cin>>n;
-    if(n==3){
-        int a,b,c;
-        cin>>a>>b>>c;
-        if(a==b) cout<<c;
-        else if(b==c) cout<<a;
-        else cout<<b;
+    int arr[n];
 
-        cout<<endl;
-       return 0;
-    }
-    int n1,n2;
-    cin>>n1>>n2;
-    for(int i=2;i<n;i++){
-        int z;
-        cin>>z;
-        n1=n2;
-        n2=z;
-        if(n1!=z){
-            cout<<z<<endl;
-            return 0;
+   for (int i = 0; i < n; i++)
+   { 
+    
+
+    cin>>arr[i];
+    
+    
+      }
+
+for (int i = 0; i < n; i++)
+{
+    if(arr[0]!=arr[i]){
+        if(arr[0]==arr[1]){
+            cout<<i+1;
+            cout<<endl;
+            break;
+        }else{
+           if(arr[2]==arr[0]){
+            cout<<i+1;
+            cout<<endl;
+            break;
+           } else{
+            cout<<1;
+            cout<<endl;
+            break;
+           }
         }
     }
-}
+
+   
+   
+} 
+   t--;
+
+}}
